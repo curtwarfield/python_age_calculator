@@ -43,5 +43,8 @@ birthday = datetime(year, month, day)
 new_date = datetime.today() - birthday
 days_old = new_date.days
 
-print(f"You are {days_old:,} days old!")
+if days_old < 1:
+  print("You entered a birthday that hasn't happened yet!")
+else:
+  print(f"You are {days_old:,} days old!")
 ~~~
