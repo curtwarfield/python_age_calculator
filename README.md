@@ -32,11 +32,11 @@ while True:
 while True:
   year = input("What year were you born? ")
   today_year = datetime.today().year
-  if year.isdigit() and int(year) in range(0, datetime.now().year + 1):
+  if year.isdigit() and int(year) in range(1, datetime.now().year + 1):
     year = int(year)
     break
   else:
-    print("Invalid year. Enter a year between 1800 and the current year.")
+    print("Invalid year. Enter a year between 1 and the the current year.")
 
 
 birthday = datetime(year, month, day)
