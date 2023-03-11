@@ -36,7 +36,7 @@ while True:
     year = int(year)
     break
   else:
-    print("Invalid year. Enter a year between 1 and the the current year.")
+   print(f"Invalid year. Enter a year between 1 AD and {today_year}.")
 
 
 birthday = datetime(year, month, day)
