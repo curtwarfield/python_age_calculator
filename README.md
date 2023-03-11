@@ -32,7 +32,7 @@ while True:
 while True:
   year = input("What year were you born? ")
   today_year = datetime.today().year
-  if year.isdigit() and int(year) in range(1800, datetime.now().year + 1):
+  if year.isdigit() and int(year) in range(0, datetime.now().year + 1):
     year = int(year)
     break
   else:
